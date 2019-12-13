@@ -1,0 +1,25 @@
+div .st {
+}
+
+div .amount {
+  height: 50px;
+  font-size: 30px;
+  font-weight: bold;
+  position: sticky;
+  top: 60%;
+  opacity: 0;
+}
+
+div .compname {
+  height: 50px;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.comp {
+  height: 200px;
+}
+
+html,body,#root,.container-xl {
+  height: 100%;
+}

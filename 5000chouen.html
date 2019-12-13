@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>5000兆円シミュレータ</title>
+    <meta name="title" content="5000兆円シミュレータ">
+    <meta name="description" content="5000兆円の凄さを実感するためのアプリです。">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="./5000chouenassets/style.css">
+    <link rel="icon" type="image/png" sizes="16x16" href="./5000chouenassets/favicon-16x16.png">
+  </head>
+  <body>
+    <div id="bg" style="display: block; position: absolute; top: 0; left: 0; width: 100%; height: 91550px; background: linear-gradient(white, skyblue, black, black, black, black); z-index: -10000"></div>
+    <div id="root" style="text-align: center;">
+      <a id="hoge" href="/" style="position: absolute; left: 30px; top: 20px; text-decoration: none; font-size: 30px; font-weight: bold; color: purple">ackyla.com</a>
+      <div class="container-xl">
+	<div class="row" style="height: 100%;">
+	  <div class="col" style="margin: auto;">
+	    <img src="./5000chouenassets/5000chouen-logo.png" style="margin-top: 100px; max-width: 90%; max-height: 50%; margin-left: 30px; margin-right: 30px;"/>
+	    <h2><a href="https://twitter.com/ackyla" target="_blank" style="color: inherit; text-decoration: none;">@ackyla</a></h2>
+	    <p><a href="https://qiita.com/advent-calendar/2019/ponos" target="_blank" style="color: inherit;">PONOS Advent Calendar 2019</a></p>
+	  </div>
+	</div>
+	<div class="row">
+	  <div class="col-6">
+	    <div id="amount1" class="amount" style="transition: opacity 0.3s ease-in-out 0s;"></div>
+	    <div id="space1" class="space" style="height: 500px;"></div>
+	    <div id="amount2" class="amount"></div>
+	    <div id="space2" class="space" style="height: 5200px;"></div>
+	    <div id="amount3" class="amount"></div>
+	    <div id="space3" class="space" style="height: 4200px;"></div>
+	    <div id="amount4" class="amount"></div>
+	    <div id="space4" class="space" style="height: 1200px;"></div>
+	    <div id="amount5" class="amount"></div>
+	    <div id="space5" class="space" style="height: 1200px;"></div>
+	    <div id="amount6" class="amount"></div>
+	    <div id="space6" class="space" style="height: 4200px;"></div>
+	    <div id="amount7" class="amount"></div>
+	    <div id="space7" class="space" style="height: 2200px;"></div>
+	    <div id="amount8" class="amount" style="transition: color 0.3s ease-in-out 0s;"></div>
+	    <div id="space8" class="space" style="height: 12200px;"></div>
+	    <div id="amount9" class="amount" style="color: white;"></div>
+	    <div id="space9" class="space" style="height: 4200px;"></div>
+	    <div id="amount10" class="amount" style="color: white;"></div>
+	    <div id="space10" class="space" style="height: 52200px;"></div>
+	    <div id="amount11" class="amount" style="color: white;"></div>
+	    <div id="space11" style="background: gray;"></div>
+	  </div>
+	  <div class="col-6">
+	    <div class="compname">&nbsp;</div>
+	    <div id="blank1" class="blank" style="height: 500px;"></div>
+	    <div class="compname">クリスマスツリー(1.8m)</div>
+	    <div class="st"><img class="comp" src="./5000chouenassets/comp1.png" /></div>
+	    <div id="blank2" class="blank" style="height: 5000px;"></div>
+	    <div class="compname">太陽の塔(70m)</div>
+	    <div class="st"><img class="comp" src="./5000chouenassets/comp2.jpg" /></div>
+	    <div id="blank3" class="blank" style="height: 4000px;"></div>
+	    <div class="compname">東京タワー(333m)</div>
+	    <div class="st"><img class="comp" src="./5000chouenassets/comp3.jpg" /></div>
+	    <div id="blank4" class="blank" style="height: 1000px;"></div>
+	    <div class="compname">東京スカイツリー(634m)</div>
+	    <div class="st"><img class="comp" src="./5000chouenassets/comp4.jpg" /></div>
+	    <div id="blank5" class="blank" style="height: 1000px;"></div>
+	    <div class="compname">ブルジュ・ハリファ(828m)</div>
+	    <div class="st"><img class="comp" src="./5000chouenassets/comp5.jpg" /></div>
+	    <div id="blank6" class="blank" style="height: 4000px;"></div>
+	    <div class="compname">富士山(3,776m)</div>
+	    <div class="st"><img class="comp" src="./5000chouenassets/comp6.jpg" /></div>
+	    <div id="blank7" class="blank" style="height: 2000px;"></div>
+	    <div class="compname">エベレスト(8,848m)</div>
+	    <div class="st"><img class="comp" src="./5000chouenassets/comp7.jpg" /></div>
+	    <div id="blank8" class="blank" style="height: 12000px;"></div>
+	    <div class="compname" style="color: white;">宇宙空間(100km)</div>
+	    <div class="st"><div style="height: 200px;"></div></div>
+	    <div id="blank9" class="blank" style="height: 4000px;"></div>
+	    <div class="compname" style="color: white;">国際宇宙ステーション(408km)</div>
+	    <div class="st"><img class="comp" src="./5000chouenassets/comp9.jpg" /></div>
+	    <div id="blank10" class="blank" style="height: 52000px;"></div>
+	    <div class="compname" style="font-size: 30px; color: white;">50,000km</div>
+	    <div class="st" style="height: 200px;"></div>
+	    <div id="blank10" class="blank" style="height: 1000px;"></div>
+	    <div class="compname" style="color: white;">そして…</div>
+	    <div class="st" style="height: 200px;"></div>
+	    <div id="blank10" class="blank" style="height: 1000px;"></div>
+	    <div class="compname" style="position: sticky; top: 20px; color: white;">月(384,400km)</div>
+	    <div class="st" style="position: sticky; top: 70px;"><img class="comp" src="./5000chouenassets/comp10.jpg" /></div>
+	    <div id="blank11" class="blank" style="height: 1000px;"></div>
+	  </div>
+	</div>
+	<div class="row" style="height: 100%;">
+	  <div class="col" style="margin: auto;">
+	    <img src="./5000chouenassets/5000chouen-logo.png" style="margin-top: 100px; max-width: 90%; max-height: 50%; margin-left: 30px; margin-right: 30px;"/>
+	    <h2><a href="https://twitter.com/ackyla" target="_blank" style="color: inherit; text-decoration: none;">@ackyla</a></h2>
+	    <p><a href="https://qiita.com/advent-calendar/2019/ponos" target="_blank" style="color: inherit;">PONOS Advent Calendar 2019</a></p>
+	  </div>
+	</div>
+      </div>
+    </div>
+    <script>
+      window.onload = function()
+      {
+	  bg = document.getElementById("bg");
+	  bg.style.top = window.innerHeight+"px";
+      }
+      window.onresize = function()
+      {
+	  bg = document.getElementById("bg");
+	  bg.style.top = window.innerHeight+"px";
+      }
+      window.onscroll = function()
+      {
+	  a1 = document.getElementById("amount1");
+	  a2 = document.getElementById("amount2");
+	  a3 = document.getElementById("amount3");
+	  a4 = document.getElementById("amount4");
+	  a5 = document.getElementById("amount5");
+	  a6 = document.getElementById("amount6");
+	  a7 = document.getElementById("amount7");
+	  a8 = document.getElementById("amount8");
+	  a9 = document.getElementById("amount9");
+	  a10 = document.getElementById("amount10");
+	  a11 = document.getElementById("amount11");
+
+	  a1top = a1.getBoundingClientRect().top;
+	  a2top = a2.getBoundingClientRect().top;
+	  a3top = a3.getBoundingClientRect().top;
+	  a4top = a4.getBoundingClientRect().top;
+	  a5top = a5.getBoundingClientRect().top;
+	  a6top = a6.getBoundingClientRect().top;
+	  a7top = a7.getBoundingClientRect().top;
+	  a8top = a8.getBoundingClientRect().top;
+	  a9top = a9.getBoundingClientRect().top;
+	  a10top = a10.getBoundingClientRect().top;
+	  a11top = a11.getBoundingClientRect().top;
+
+	  s1h = parseInt(document.getElementById("space1").style.height)+50;
+	  s2h = parseInt(document.getElementById("space2").style.height)+50;
+	  s3h = parseInt(document.getElementById("space3").style.height)+50;
+	  s4h = parseInt(document.getElementById("space4").style.height)+50;
+	  s5h = parseInt(document.getElementById("space5").style.height)+50;
+	  s6h = parseInt(document.getElementById("space6").style.height)+50;
+	  s7h = parseInt(document.getElementById("space7").style.height)+50;
+	  s8h = parseInt(document.getElementById("space8").style.height)+50;
+	  s9h = parseInt(document.getElementById("space9").style.height)+50;
+	  s10h = parseInt(document.getElementById("space10").style.height)+50;
+	  s11h = parseInt(document.getElementById("space11").style.height)+50;
+
+	  p1 = 180000000
+	  p2 = 7000000000
+	  p3 = 33300000000
+	  p4 = 63400000000
+	  p5 = 82800000000
+	  p6 = 377600000000
+	  p7 = 884800000000
+	  p8 = 10000000000000
+	  p9 = 40800000000000
+	  p10 = 5000000000000000
+
+	  if ((a2top-a1top) < s1h) {
+	      a1.style.opacity =  1;
+	  } else {
+	      a1.style.transition = "opacity 0.3s ease-in-out 0s";
+	      a1.style.opacity =  0;
+	  }
+	  amount = p1-p1*(a2top-a1top)/s1h;
+	  if(amount < 100000000) {
+	      a1.innerText = Math.round(amount/10000)+"万円";
+	  } else {
+	      a1.innerText = Math.round(amount/100000000*100)/100+"億円";
+	  }
+
+	  if ((a3top-a2top) < s2h-250) {
+	      a2.style.opacity = 1;
+	      a1.style.transition = null;
+	      a1.style.opacity = 0;
+	  } else {
+	      a2.style.opacity = 0;
+	  }
+	  amount = p2-p1-(p2-p1)*(a3top-a2top)/s2h+p1;
+	  if(amount < 1000000000) {
+	      a2.innerText = Math.round(amount/100000000*100)/100+"億円";
+	  } else {
+	      a2.innerText = Math.round(amount/100000000)+"億円";
+	  }
+
+	  if ((a4top-a3top) < s3h-250) {
+	      a3.style.opacity = 1;
+	      a2.style.opacity = 0;
+	  } else {
+	      a3.style.opacity = 0;
+	  }
+	  amount = p3-p2-(p3-p2)*(a4top-a3top)/s3h+p2;
+	  a3.innerText = Math.round(amount/100000000)+"億円";
+
+	  if ((a5top-a4top) < s4h-250) {
+	      a4.style.opacity = 1;
+	      a3.style.opacity = 0;
+	  } else {
+	      a4.style.opacity = 0;
+	  }
+	  amount = p4-p3-(p4-p3)*(a5top-a4top)/s4h+p3;
+	  a4.innerText = Math.round(amount/100000000)+"億円";
+
+	  if ((a6top-a5top) < s5h-250) {
+	      a5.style.opacity = 1;
+	      a4.style.opacity = 0;
+	  } else {
+	      a5.style.opacity = 0;
+	  }
+	  amount = p5-p4-(p5-p4)*(a6top-a5top)/s5h+p4;
+	  a5.innerText = Math.round(amount/100000000)+"億円";
+
+	  if ((a7top-a6top) < s6h-250) {
+	      a6.style.opacity = 1;
+	      a5.style.opacity = 0;
+	  } else {
+	      a6.style.opacity = 0;
+	  }
+	  amount = p6-p5-(p6-p5)*(a7top-a6top)/s6h+p5;
+	  a6.innerText = Math.round(amount/100000000)+"億円";
+
+	  if ((a8top-a7top) < s7h-250) {
+	      a7.style.opacity = 1;
+	      a6.style.opacity = 0;
+	  } else {
+	      a7.style.opacity = 0;
+	  }
+	  amount = p7-p6-(p7-p6)*(a8top-a7top)/s7h+p6;
+	  a7.innerText = Math.round(amount/100000000)+"億円";
+
+	  if ((a9top-a8top) < s8h-250) {
+	      a8.style.opacity = 1;
+	      a7.style.opacity = 0;
+	  } else {
+	      a8.style.opacity = 0;
+	  }
+	  amount = p8-p7-(p8-p7)*(a9top-a8top)/s8h+p7;
+	  if (amount < 1000000000000) {
+	      a8.innerText = Math.round(amount/100000000)+"億円";
+	  } else {
+	      a8.innerText = Math.round(amount/1000000000000*10)/10+"兆円";
+	  }
+
+	  if (amount < 5000000000000) {
+	      a8.style.color = "inherit";
+	  } else {
+	      a8.style.color = "white";
+	  }
+
+	  if ((a10top-a9top) < s9h-250) {
+	      a9.style.opacity = 1;
+	      a8.style.opacity = 0;
+	  } else {
+	      a9.style.opacity = 0;
+	  }
+	  amount = p9-p8-(p9-p8)*(a10top-a9top)/s9h+p8;
+	  a9.innerText = Math.round(amount/1000000000000*10)/10+"兆円";
+
+	  if ((a11top-a10top) < s10h-250) {
+	      a10.style.opacity = 1;
+	      a9.style.opacity = 0;
+	  } else {
+	      a10.style.opacity = 0;
+	  }
+	  amount = p10-p9-(p10-p9)*(a11top-a10top)/s10h+p9;
+	  if (amount < 100000000000000) {
+	      a10.innerText = Math.round(amount/1000000000000*10)/10+"兆円";
+	  } else {
+	      a10.innerText = Math.round(amount/1000000000000)+"兆円";
+	  }
+      }
+    </script>
+  </body>
+</html>
