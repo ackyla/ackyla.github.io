@@ -1,4 +1,5 @@
 div .st {
+  height: 200px;
 }
 
 div .amount {
@@ -17,7 +18,8 @@ div .compname {
 }
 
 .comp {
-  height: 200px;
+  max-height: 200px;
+  max-width: 100%;
 }
 
 html,body,#root,.container-xl {
